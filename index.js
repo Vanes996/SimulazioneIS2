@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000
 app.get('/', (req, res) => res.status(200).send('Hello World!'));
 
 app.get('/square', async(req,res) =>{
-    console.log(req.query.string.length**2);  
+    console.log(req.query.string.length**2);
     let result = await string_square(req.query.string);
     res.status(200).json(result);
 });
