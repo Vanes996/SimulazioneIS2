@@ -26,3 +26,6 @@ async function string_square(s) {
     }
   }
 }
+
+
+module.exports = string_square;
