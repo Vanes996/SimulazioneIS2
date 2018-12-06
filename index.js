@@ -16,7 +16,7 @@ let server = app.listen(PORT, () => console.log('Example app listening on port'+
 
 
 async function string_square(s) {
-  if ((typeof(s)) != "string") {
+  if (typeof s != 'string') {
     return {result: -1}
   }
   else{

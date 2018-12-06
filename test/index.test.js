@@ -1,9 +1,10 @@
 const fetch = require ('node-fetch');
 const PORT = process.env.PORT || 3000;
 const SERVER_URL = process.env.SERVER_URL || 'http://localhost:' + PORT;
-const app = express();
+//const app = express();
 
 const string_square = require('../index')
+
 const teststring = function(string){
    return fetch(SERVER_URL + '/square?string='+string, {
       method: 'GET',
@@ -13,8 +14,6 @@ const teststring = function(string){
       },
    });
 };
-let server;
-
 
 
 test('"1"',()=>{
